@@ -9,16 +9,16 @@ import SwiftUI
 
 struct CityListView: View {
     
-    private let viewModel = CityListViewModel()
+    var cities: [City] = [.boston, .sanfrancisco, .losangeles, .denver, .boulder, .chicago, .newyork, .raleigh]
     
     var body: some View {
         
         NavigationView {
             List {
-                ForEach(viewModel.cities, id: \.self) { (key) in
+                ForEach(cities, id: \.self) { (key) in
                     NavigationLink(
                         destination:
-                            JobListsView(viewModel: JobListViewModel(city: key)),
+                            JobListsView(city: key),
                         label: {
                             Text(key.rawValue)
                         })

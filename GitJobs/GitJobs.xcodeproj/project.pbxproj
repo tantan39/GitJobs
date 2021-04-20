@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,14 +17,12 @@
 		A7B2B269262F31DB002829B2 /* GitJobsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B268262F31DB002829B2 /* GitJobsUITests.swift */; };
 		A7B2B289262F3540002829B2 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B288262F3540002829B2 /* JobModel.swift */; };
 		A7B2B28D262F3546002829B2 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B288262F3540002829B2 /* JobModel.swift */; };
-		A7B2B293262F3A92002829B2 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B292262F3A92002829B2 /* CityListViewModel.swift */; };
-		A7B2B294262F3A92002829B2 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B292262F3A92002829B2 /* CityListViewModel.swift */; };
 		A7B2B29D262F3D26002829B2 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B29C262F3D26002829B2 /* TextManager.swift */; };
 		A7B2B29E262F3D26002829B2 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B29C262F3D26002829B2 /* TextManager.swift */; };
 		A7B2B2A9262F3DE2002829B2 /* JobListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B2A8262F3DE2002829B2 /* JobListsView.swift */; };
 		A7B2B2AA262F3DE2002829B2 /* JobListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B2A8262F3DE2002829B2 /* JobListsView.swift */; };
-		A7B2B2B0262F3FE2002829B2 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B2AF262F3FE2002829B2 /* JobListViewModel.swift */; };
-		A7B2B2B1262F3FE2002829B2 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B2AF262F3FE2002829B2 /* JobListViewModel.swift */; };
+		A7B2B2C0262F4332002829B2 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B2BF262F4332002829B2 /* GitHubAPI.swift */; };
+		A7B2B2C1262F4332002829B2 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2B2BF262F4332002829B2 /* GitHubAPI.swift */; };
 		EC8858FA0856B6AE64FFD31B /* Pods_GitJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB33DB2B31998A279F8BAD1 /* Pods_GitJobs.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,10 +62,9 @@
 		A7B2B268262F31DB002829B2 /* GitJobsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitJobsUITests.swift; sourceTree = "<group>"; };
 		A7B2B26A262F31DB002829B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7B2B288262F3540002829B2 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
-		A7B2B292262F3A92002829B2 /* CityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModel.swift; sourceTree = "<group>"; };
 		A7B2B29C262F3D26002829B2 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		A7B2B2A8262F3DE2002829B2 /* JobListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListsView.swift; sourceTree = "<group>"; };
-		A7B2B2AF262F3FE2002829B2 /* JobListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
+		A7B2B2BF262F4332002829B2 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		A9BE6FD6C9EDA079BEE4C4D5 /* Pods_GitJobs_GitJobsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitJobs_GitJobsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6D61BADDD319975367186D /* Pods-GitJobsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitJobsTests.release.xcconfig"; path = "Target Support Files/Pods-GitJobsTests/Pods-GitJobsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5066221B16B603873700FDC /* Pods-GitJobs-GitJobsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitJobs-GitJobsUITests.debug.xcconfig"; path = "Target Support Files/Pods-GitJobs-GitJobsUITests/Pods-GitJobs-GitJobsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +139,6 @@
 			children = (
 				A7B2B2AE262F3F6D002829B2 /* CustomViews */,
 				A7B2B29B262F3D02002829B2 /* Manager */,
-				A7B2B291262F3A64002829B2 /* ViewModel */,
 				A7B2B284262F339B002829B2 /* Models */,
 				A7B2B283262F328C002829B2 /* Views */,
 				A7B2B27F262F326B002829B2 /* Services */,
@@ -183,6 +179,7 @@
 		A7B2B27F262F326B002829B2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A7B2B2BF262F4332002829B2 /* GitHubAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,15 +199,6 @@
 				A7B2B288262F3540002829B2 /* JobModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		A7B2B291262F3A64002829B2 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A7B2B292262F3A92002829B2 /* CityListViewModel.swift */,
-				A7B2B2AF262F3FE2002829B2 /* JobListViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A7B2B29B262F3D02002829B2 /* Manager */ = {
@@ -477,11 +465,10 @@
 			files = (
 				A7B2B24E262F31D8002829B2 /* CityListView.swift in Sources */,
 				A7B2B24C262F31D8002829B2 /* GitJobsApp.swift in Sources */,
-				A7B2B2B0262F3FE2002829B2 /* JobListViewModel.swift in Sources */,
 				A7B2B29D262F3D26002829B2 /* TextManager.swift in Sources */,
 				A7B2B289262F3540002829B2 /* JobModel.swift in Sources */,
 				A7B2B2A9262F3DE2002829B2 /* JobListsView.swift in Sources */,
-				A7B2B293262F3A92002829B2 /* CityListViewModel.swift in Sources */,
+				A7B2B2C0262F4332002829B2 /* GitHubAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,11 +476,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7B2B2B1262F3FE2002829B2 /* JobListViewModel.swift in Sources */,
 				A7B2B29E262F3D26002829B2 /* TextManager.swift in Sources */,
-				A7B2B294262F3A92002829B2 /* CityListViewModel.swift in Sources */,
 				A7B2B2AA262F3DE2002829B2 /* JobListsView.swift in Sources */,
 				A7B2B25E262F31DB002829B2 /* GitJobsTests.swift in Sources */,
+				A7B2B2C1262F4332002829B2 /* GitHubAPI.swift in Sources */,
 				A7B2B28D262F3546002829B2 /* JobModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
