@@ -18,7 +18,7 @@ struct CityListView: View {
                 ForEach(viewModel.cities, id: \.self) { (key) in
                     NavigationLink(
                         destination:
-                            JobListsView(),
+                            JobListsView(viewModel: JobListViewModel(city: key)),
                         label: {
                             Text(key.rawValue)
                         })

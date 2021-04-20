@@ -6,6 +6,7 @@ target 'GitJobs' do
   use_frameworks!
 
   # Pods for GitJobs
+  pod 'Alamofire'
 
   target 'GitJobsTests' do
     inherit! :search_paths

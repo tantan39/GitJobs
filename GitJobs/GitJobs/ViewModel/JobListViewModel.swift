@@ -17,7 +17,7 @@ struct JobListViewModel {
     
 //    func fetchJobs(location: String?, completion: (Result<Data, Error>) -> Void) {
 //        guard let key = location else { return }
-//        
-//        
+//
+//
 //    }
 }
